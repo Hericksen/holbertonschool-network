@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Exemple de script pour afficher les ports TCP et UDP
+# Display listening TCP and UDP ports with associated PID and program name
+echo "Active Internet connections (only servers)"
+ss -tulnp
 
-netstat -l --program
