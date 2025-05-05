@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+
+# This script listens on port 98 on localhost and waits for input
+echo "Listening on port 98 on localhost. Type your messages in another terminal."
+
+# Use netcat (nc) to listen on port 98 on localhost
+sudo nc -l -p 98 -s 127.0.0.2
