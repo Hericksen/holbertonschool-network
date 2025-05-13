@@ -1,0 +1,17 @@
+```mermaid
+graph LR
+    A[Utilisateur tape https://www.google.com] --> B[DNS Resolution]
+    B --> C[Adresse IP du serveur obtenue]
+    C --> D[Requête envoyée au serveur sur le port 443]
+    D --> E[Trafic chiffré SSL/TLS]
+    E --> F[Trafic passe à travers un pare-feu]
+    F --> G[Requête distribuée par un Load Balancer]
+    G --> H[Serveur web reçoit la requête]
+    H --> I[Serveur web sert la page web]
+    I --> J[Serveur d'application génère la page web]
+    J --> K[Serveur d'application demande des données à la base de données]
+    K --> L[Réponse de la base de données]
+    L --> J[Serveur d'application traite les données]
+    J --> I[Serveur web présente la page au client]
+    I --> M[Page web affichée dans le navigateur]
+```
